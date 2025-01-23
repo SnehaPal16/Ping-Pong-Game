@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Light modee */
+#btn1{
+    background: linear-gradient(to right, #006400,#008000,#7CFC00);
+}
+
+#btn1:hover{
+    background: linear-gradient(to left, #006400,#008000,#7CFC00);
+}
+
+
+/* dark mode */
+.dark-mode {
+    background: linear-gradient(to right, #4b0c0c,#1d0e3b);
+    color: white;
+}
+.dark-mode #btn1{
+    background: linear-gradient(to right, #4b0c0c,#291f3e,#1d0e3b);
+}
+.dark-mode #btn1:hover{
+    background: linear-gradient(to left, #4b0c0c,#291f3e,#1d0e3b);
+}

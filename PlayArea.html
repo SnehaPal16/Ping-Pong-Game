@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PING PONG GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body class="font-righteous text-white bg-gradient-to-r from-[#c43535] to-[#7951cd] dark:bg-black">
+    
+    <div class="w-full h-full overflow-hidden relative">
+        <!-- score bar -->
+        <div class="flex justify-between items-center">
+            <div class="h-[6rem] w-[8rem] bg-[#9b2727] ml-3 mt-3 text-2xl px-6 py-5 select-none">
+                <div id="plnm1">Player1</div>
+                <div class="px-6" id="l_score">0</div>
+            </div>
+            <div class="h-[6rem] w-[8rem] bg-[#2c0180] mr-3 mt-3 text-2xl px-6 py-5 select-none">
+                <div id="plnm2">Player2</div>
+                <div class="px-6" id="r_score">0</div>
+            </div>
+        </div>
+
+
+        <!-- play board -->
+
+        <canvas id="board" class=" w-3/4 h-[30rem] mx-auto border-black border-8 bg-lime-600 dark:bg-black dark:border-white dark:shadow-lg">
+            
+        </canvas>
+
+
+        <!-- option bar -->
+        <div class="flex justify-center items-end mt-5 space-x-40">
+            <a href="#" class="text-2xl text-center bg-[#5c363c] p-4 dark:bg-black" id="replayBtn">REPLAY</a>
+            <a href="#" class="text-2xl text-center bg-[#5c363c] p-4 dark:bg-black" id="ppBtn">PLAY/PAUSE</a>
+            <a href="./index.html" class="text-2xl text-center bg-[#5c363c] p-4 dark:bg-black">QUIT</a>
+            
+        </div>
+    </div>
+
+    <script src="./PlayArea.js"></script>
+</body>
+</html>

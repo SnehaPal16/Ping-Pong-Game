@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PING PONG GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-righteous bg-gradient-to-r from-[#006400] via-[#008000] to-[#7CFC00] duration-500">
+    <!-- bg img -->
+    <img id="bgimage" src="./bg.png" class="absolute opacity-25 h-full w-full object-cover z-[-100]">
+    
+    <!-- container -->
+    <div class="w-full h-full overflow-hidden">
+        <!-- mode button -->
+        <div class="z-[100]">
+            <button id="modeToggle" class="cursor-pointer z-100">
+                <img id="modeIcon" src="sun-removebg-preview.png" class="h-48 w-48">
+            </button>
+        </div>
+
+        <!-- form container -->
+        <div class="flex justify-center items-center">
+            <form action="" class="px-5 py-5 mx-5 my-5 h-[25rem] flex-col items-center justify-evenly shadow-[0px_0px_20px_rgba(0,0,0,0.642)] backdrop-blur-[4.8px] border rounded-2xl border-solid border-[rgba(46,152,45,0.6)] dark:shadow-[0px 0px 20px black]
+            dark:backdrop-blur-lg dark:border-transparent">
+                <fieldset class="text-3xl mt-9">PLAYER'S POSITION</fieldset>
+                
+                <!-- player position -->
+                <div class="my-[5rem] flex-col justify-center items-center">
+                    <div class="my-5 flex items-center justify-evenly ">
+                        <label class="text-xl">Player1 ---- -></label>
+                        <div>Left Paddle</div>
+                    </div>
+
+                    <div class="my-5 flex items-center justify-evenly">
+                        <label class="text-xl">Player2 ---- -></label>
+                        <div>Right Paddle</div>
+                    </div>
+                </div>
+
+                <!-- play button -->
+                <a href="PlayArea.html" id="btn1" class="block w-full mt-[5rem] text-center text-3xl px-5 py-2 border rounded-3xl">
+                    PLAY
+                </a>
+                    
+            </form>
+        </div>
+    </div>
+    <script src="Entery.js"></script>
+</body>
+</html>
